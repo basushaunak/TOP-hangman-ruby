@@ -152,7 +152,7 @@ class Hangman
     puts "*****Playing*****"
     while @moves_left > 0
       puts "Type 'save' and press enter to save the game and quit"
-      p "Enter a letter and press 'Enter' key: "
+      puts "Enter a letter and press 'Enter' key: "
       chr = gets.chomp.downcase
       if chr == "save"
         @save_game = true
