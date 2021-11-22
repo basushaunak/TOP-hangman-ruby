@@ -151,7 +151,8 @@ class Hangman
   def play
     puts "*****Playing*****"
     while @moves_left > 0
-      print "Enter a letter and press 'Enter' key: "
+      puts "Type 'save' and press enter to save the game and quit"
+      p "Enter a letter and press 'Enter' key: "
       chr = gets.chomp.downcase
       if chr == "save"
         @save_game = true
